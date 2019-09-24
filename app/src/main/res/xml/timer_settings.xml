@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+
+        android:defaultValue = "true"
+        android:key = "enable_sounds"
+        android:title = "Enable_Sounds"
+        android:summaryOff = "Sound Disable"
+        android:summaryOn = "Sound Enable"
+
+        />
+    <ListPreference
+
+        android:title = "Timer Melody"
+        android:key = "timer_melody"
+        android:defaultValue = "bell"
+        android:entries ="@array/pref_timer_melody_labels"
+        android:entryValues = "@array/pref_timer_melody_values"
+        />
+    <EditTextPreference
+
+        android:title="Default Interval"
+        android:key="default_interval"
+        android:defaultValue="30"/>
+
+
+</PreferenceScreen>
